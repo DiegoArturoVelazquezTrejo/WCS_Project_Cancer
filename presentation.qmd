@@ -1,0 +1,16 @@
+---
+format: 
+    revealjs
+title: 
+   "Three cancer drugs, same target" 
+---
+
+## Analysisplan: 
+
+1. Some QC
+2. DE-genes and pathway enrichment
+3. The Random forrest approach 
+4. Networks by proximity
+5. Checking with Reactome
+
+## 
