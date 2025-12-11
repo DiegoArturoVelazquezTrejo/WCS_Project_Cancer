@@ -9,7 +9,7 @@
 <link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.25">
 
-  <title>Three cancer drugs, same target</title>
+  <title>presentation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,8 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-d7445411b8369110ccea2da7e669e534.css">
+  <link rel="stylesheet" href="styles.scss">
   <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -44,6 +45,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -125,29 +127,76 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Three cancer drugs, same target</h1>
 
-<div class="quarto-title-authors">
-</div>
+<section>
+<section id="section" class="title-slide slide level1 center">
+<h1></h1>
 
 </section>
-<section id="analysisplan" class="slide level2">
+<section id="agenda" class="slide level2 scrollable">
+<h2>Agenda:</h2>
+<ol type="1">
+<li>Biological Question</li>
+<li>Analysis</li>
+<li>Concluding Remarks</li>
+</ol>
+</section>
+<section id="biological-question" class="slide level2">
+<h2>Biological Question:</h2>
+
+<img data-src="illustrations/prostate.svg" class="r-stretch"></section>
+<section id="androgen-receptor" class="slide level2">
+<h2>Androgen receptor:</h2>
+
+<img data-src="https://encyclopedia.pub/media/item_content/202212/639a757a2a326biomolecules-12-01768-g002.png" class="r-stretch"></section>
+<section id="the-experiment" class="slide level2">
+<h2>The experiment:</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p>Apalutamide</p>
+<p><br>
+</p>
+<p><img data-src="ARN.png"></p>
+</div><div class="column" style="width:33%;">
+<p>Bicalutamide</p>
+<p><br>
+</p>
+<p><img data-src="BIC.png"></p>
+</div><div class="column" style="width:33%;">
+<p>Enzalutamide</p>
+<p><br>
+</p>
+<p><img data-src="ENZ.png"></p>
+</div></div>
+</section>
+<section id="the-experiment-1" class="slide level2">
+<h2>The experiment:</h2>
+<ul>
+<li>Test the three drugs on prostate cancer cell lines.</li>
+<li>Only 2 biological replicates</li>
+</ul>
+</section>
+<section id="analysisplan" class="slide level2 scrollable">
 <h2>Analysisplan:</h2>
 <ol type="1">
-<li>Some QC</li>
-<li>DE-genes and pathway enrichment</li>
+<li>Some QC / sanity checks</li>
+<li>DE-genes and pathway enrichment
+<ol type="1">
+<li>Standard approach</li>
+<li>GSVA</li>
+</ol></li>
 <li>The Random forrest approach</li>
 <li>Networks by proximity</li>
 <li>Checking with Reactome</li>
 </ol>
 </section>
-<section id="section" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="illustrations/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
@@ -199,7 +248,7 @@
         controlsBackArrows: 'faded',
 
         // Display a presentation progress bar
-        progress: true,
+        progress: false,
 
         // Display the page number of the current slide
         slideNumber: false,

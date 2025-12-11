@@ -1,0 +1,155 @@
+.reveal #title-slide h1 {
+  font-size: 1.4em !important;
+  color: white !important;
+}
+
+.reveal {
+  font-size: 24pt;
+}
+
+.reveal h1 {
+  color: white;
+  font-size: 1.2em !important;
+}
+
+.reveal h2 {
+  color: white;
+  font-size: 1.4em !important;
+}
+
+
+.reveal #title-slide h2 {
+  font-size: 1.3em !important;
+  color: white !important;
+  /* Subtitle */
+}
+
+.reveal {
+  background-color: #0c2633;
+  /* dark gray background */
+  color: white;
+  /* optional */
+}
+
+.reveal #title-slide .quarto-title-author {
+  font-size: 1em !important;
+  /* Author, Date, etc. */
+  color: white !important;
+}
+
+.reveal #title-slide .subtitle {
+  font-size: 1.2em !important;
+  /* Author, Date, etc. */
+  color: white !important;
+}
+
+.small-table table {
+  font-size: 22px;
+}
+
+.small-text {
+  font-size: 22px !important;
+}
+
+.small-text-link {
+  font-size: 12px !important;
+  color: darkgrey
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reveal .slide-logo {
+  width: 15% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.reveal .slide-logo img {
+  width: 42px !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.assignment-class {
+  color: #901A1E;
+  font-weight: bold;
+  font-size: 16pt;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.custom-progress-dots {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  opacity: 1;
+  border-color: #f0f0f0;
+  transition: transform 0.3s, background 0.3s, opacity 0.3s;
+}
+
+/* All dots gray by default */
+.progress-dot {
+  background: #f3f5ff;
+}
+
+/* Dots in the current section take color */
+.progress-dot.in-section[data-section="agenda"] {
+  background: #ffffff;
+}
+
+.progress-dot.in-section[data-section="teaching"] {
+  background: #c2d4ff;
+}
+
+.progress-dot.in-section[data-section="kerim"] {
+  background: #b4a7ff;
+}
+
+.progress-dot.in-section[data-section="lab"] {
+  background: #3967ff;
+}
+
+.progress-dot.in-section[data-section="paper"] {
+  background: #060fbf;
+}
+
+/* Active slide’s dot (slightly larger) */
+.progress-dot.active {
+  transform: scale(1.7);
+}
+
+.custom-progress-dots {
+  display: flex;
+  flex-direction: column;
+  /* clusters vertical */
+  gap: 20px;
+  /* space between clusters */
+}
+
+.section-cluster {
+  display: flex;
+  flex-direction: column;
+  /* dots vertical inside each cluster */
+  gap: 6px;
+}

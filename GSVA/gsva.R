@@ -4,7 +4,9 @@ library("SummarizedExperiment")
 library("GSEABase")
 library("tidyverse")
 library("purrr")
+library("ReactomePA")
 
+# data loading 
 data <- read_tsv("data/flatfile/GSE211781_norm_counts_TPM_GRCh38.p13_NCBI.tsv")
 data_counts <- read_tsv("data/flatfile/GSE211781_raw_counts_GRCh38.p13_NCBI.tsv")
 names_temp <- data |> 
@@ -33,7 +35,6 @@ gene_data_list <- gene_data |>
   filter(lol == 0)
 
 # sample data: 
-
 sample <- c("ATT-ARN.DHT-RNA.3, biol rep 1",	"ATT-ARN.DHT-RNA.7, biol rep 2",	
             "ATT-ARN.VEH-RNA.3C, biol rep 1", "ATT-ARN.VEH-RNA.7, biol rep 2", 
             "ATT-BIC.DHT-RNA.3A, biol rep 1", "ATT-BIC.DHT-RNA.7, biol rep 2", 
@@ -74,6 +75,13 @@ vehicle <- c("DHT", "DHT",
                   "DHT", "DHT", 
                   "VEH", "VEH", 
                   "VEH", "VEH")
+
+ARN <- "Apalutamide"
+BIC <- "Bicalutamide"
+ENZ <- "Enzalutamide"
+
+
+# Running gsva
 setup_tbl <- tibble(sample, assencion, sample_short, active_drug, vehicle)
 gene_set_list <- list()
 for (i in 1:length(gene_data_list$GOProcessID)){
