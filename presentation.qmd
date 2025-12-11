@@ -11,8 +11,6 @@ mainfont: lato
 logo: illustrations/logo.svg
 ---
 
-# 
-
 ## Agenda: 
 
 1. Biological Question
@@ -32,15 +30,6 @@ logo: illustrations/logo.svg
 :::{.columns}
 ::::{.column width="33%"}
 
-Apalutamide
-
-\
-
-![](ARN.png)
-
-::::
-::::{.column width="33%"}
-
 Bicalutamide
 
 \
@@ -48,6 +37,17 @@ Bicalutamide
 ![](BIC.png)
 
 ::::
+
+::::{.column width="33%"}
+
+Apalutamide
+
+\
+
+![](ARN.png)
+
+::::
+
 ::::{.column width="33%"}
 
 Enzalutamide
@@ -63,16 +63,30 @@ Enzalutamide
 
 - Test the three drugs on prostate cancer cell lines. 
 - Only 2 biological replicates
+- Lack of statistical power
 
 
 ## Analysisplan: 
 
-1. Some QC / sanity checks
+1. Normalization
 2. DE-genes and pathway enrichment
-   1. Standard approach 
+   1. Standard approach - DESeq2
    2. GSVA
 3. The Random forrest approach 
-4. Networks by proximity
-5. Checking with Reactome
+4. Networks by proximity - LIONESS (one-sample network construction)
+5. Community analysis
+6. PPI
+7. Checking with Reactome
 
-## 
+## The data: 
+
+![](figures/01_size_factors.svg){}
+
+## PCA: 
+
+![](figures/03_PCA_plot.svg){width="1000px" fig-align="center"}
+
+## Data structure: 
+
+- Large intra-sampling variance 
+- dsa

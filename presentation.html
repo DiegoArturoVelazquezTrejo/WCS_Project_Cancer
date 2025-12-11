@@ -128,11 +128,6 @@
     <div class="slides">
 
 
-<section>
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
-
-</section>
 <section id="agenda" class="slide level2 scrollable">
 <h2>Agenda:</h2>
 <ol type="1">
@@ -153,15 +148,15 @@
 <h2>The experiment:</h2>
 <div class="columns">
 <div class="column" style="width:33%;">
-<p>Apalutamide</p>
-<p><br>
-</p>
-<p><img data-src="ARN.png"></p>
-</div><div class="column" style="width:33%;">
 <p>Bicalutamide</p>
 <p><br>
 </p>
 <p><img data-src="BIC.png"></p>
+</div><div class="column" style="width:33%;">
+<p>Apalutamide</p>
+<p><br>
+</p>
+<p><img data-src="ARN.png"></p>
 </div><div class="column" style="width:33%;">
 <p>Enzalutamide</p>
 <p><br>
@@ -174,26 +169,41 @@
 <ul>
 <li>Test the three drugs on prostate cancer cell lines.</li>
 <li>Only 2 biological replicates</li>
+<li>Lack of statistical power</li>
 </ul>
 </section>
 <section id="analysisplan" class="slide level2 scrollable">
 <h2>Analysisplan:</h2>
 <ol type="1">
-<li>Some QC / sanity checks</li>
+<li>Normalization</li>
 <li>DE-genes and pathway enrichment
 <ol type="1">
-<li>Standard approach</li>
+<li>Standard approach - DESeq2</li>
 <li>GSVA</li>
 </ol></li>
 <li>The Random forrest approach</li>
-<li>Networks by proximity</li>
+<li>Networks by proximity - LIONESS (one-sample network construction)</li>
+<li>Community analysis</li>
+<li>PPI</li>
 <li>Checking with Reactome</li>
 </ol>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="the-data" class="slide level2">
+<h2>The data:</h2>
 
-</section></section>
+<img data-src="figures/01_size_factors.svg" class="r-stretch"></section>
+<section id="pca" class="slide level2">
+<h2>PCA:</h2>
+
+<img data-src="figures/03_PCA_plot.svg" class="quarto-figure quarto-figure-center r-stretch" width="1000"></section>
+<section id="data-structure" class="slide level2">
+<h2>Data structure:</h2>
+<ul>
+<li>Large intra-sampling variance</li>
+<li>dsa</li>
+</ul>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="illustrations/logo.svg" class="slide-logo"></p>
