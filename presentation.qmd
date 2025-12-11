@@ -1,14 +1,76 @@
 ---
-format: 
-    revealjs
-title: 
-   "Three cancer drugs, same target" 
+format:
+  revealjs:
+    css: styles.scss
+    progress: false
+    scrollable: true
+    slide-number: false
+    show-slide-number: all
+    font-size: 12
+mainfont: lato
+logo: illustrations/logo.svg
 ---
+
+# 
+
+## Agenda: 
+
+1. Biological Question
+2. Analysis
+3. Concluding Remarks
+
+## Biological Question: 
+
+![](illustrations/prostate.svg)
+
+## Androgen receptor: 
+
+![](https://encyclopedia.pub/media/item_content/202212/639a757a2a326biomolecules-12-01768-g002.png)
+
+## The experiment: 
+
+:::{.columns}
+::::{.column width="33%"}
+
+Apalutamide
+
+\
+
+![](ARN.png)
+
+::::
+::::{.column width="33%"}
+
+Bicalutamide
+
+\
+
+![](BIC.png)
+
+::::
+::::{.column width="33%"}
+
+Enzalutamide
+
+\
+
+![](ENZ.png)
+
+::::
+:::
+
+## The experiment: 
+
+- Test the three drugs on prostate cancer cell lines. 
+- Only 2 biological replicates
+
 
 ## Analysisplan: 
 
-1. Some QC
+1. Some QC / sanity checks
 2. DE-genes and pathway enrichment
+   1. Standard approach 
+   2. GSVA
 3. The Random forrest approach 
 4. Networks by proximity
 5. Checking with Reactome
