@@ -97,13 +97,68 @@ Enzalutamide
 6. Checking with Reactome
 7. Assessing Network effects using CoLoMoTo 
 
-## The data: 
+## We dump some data: 
 
-![](figures/01_size_factors.svg){}
-
-## PCA: 
-
-![](figures/03_PCA_plot.svg){width="1000px" fig-align="center"}
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.21.59.png)
 
 ## DE-genes using DESeq-2: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.21.41.png)
+
+## Wikipathways DE genes: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.21.45.png)
+
+## Summary of the DE-genes: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.22.06.png)
+
+## DE-genes using random forest: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.23.22.png)
+
+## Comparing the two methods: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.23.45.png)
+
+## Community analysis shows the same: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.23.30.png)
+
+![](networkCOmparison.png)
+
+## What it shows: 
+
+- Many differences.
+- To keep Boolean model simple we focus on the ones that are shared
+
+## Only 4 gene overlap: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.23.52.png)
+
+## Running a boolean model: 
+
+![](figures_presentation/arnau.png)
+
+## Running a boolean model: 
+
+![](figures_presentation/Screenshot%202025-12-12%20at%2012.24.02.png)
+
+## Running base model: 
+
+![](BNN.png)
+
+## And the values of Our genes of interest
+
+![](GenesInterest.png)
+
+## SSH = 0
+
+![](SSH_img.png)
+
+## Comparing:
+
+![](panelBoolNet.png)
+
+## Next steps: 
 
