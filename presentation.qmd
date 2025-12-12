@@ -11,6 +11,7 @@ mainfont: lato
 logo: illustrations/logo.svg
 ---
 
+
 ## Agenda: 
 
 1. Biological Question
@@ -24,6 +25,26 @@ logo: illustrations/logo.svg
 ## Androgen receptor: 
 
 ![](https://encyclopedia.pub/media/item_content/202212/639a757a2a326biomolecules-12-01768-g002.png)
+
+## The question: 
+
+Does different drugs targeting the AR have different downstream effects? 
+
+## Background: 
+
+::::{.columns}
+:::{.column width="33%"}
+![](figures_presentation/paper.png)
+:::
+:::{.column width="66%"}
+- **Cell Line:** LNCaP (androgen-responsive prostate cancer)
+- **Treatments:** 3 anti-androgen drugs (Bicalutamide, Enzalutamide, Apalutamide) + Control
+- **Conditions:** ±DHT (dihydrotestosterone)
+- **Replicates:** n=2 biological replicates
+- **Assay:** Bulk RNA-seq
+- **Analysis:** Differential expression + pathway enrichment
+:::
+::::
 
 ## The experiment: 
 
@@ -66,17 +87,15 @@ Enzalutamide
 - Lack of statistical power
 
 
-## Analysisplan: 
+## Analysis plan: 
 
-1. Normalization
-2. DE-genes and pathway enrichment
-   1. Standard approach - DESeq2
-   2. GSVA
-3. The Random forrest approach 
-4. Networks by proximity - LIONESS (one-sample network construction)
-5. Community analysis
-6. PPI
-7. Checking with Reactome
+1. DE-genes and pathway enrichment
+2. The Random forrest approach 
+3. Networks by proximity - LIONESS (one-sample network construction)
+4. Community analysis
+5. PPI
+6. Checking with Reactome
+7. Assessing Network effects using CoLoMoTo 
 
 ## The data: 
 
@@ -86,7 +105,5 @@ Enzalutamide
 
 ![](figures/03_PCA_plot.svg){width="1000px" fig-align="center"}
 
-## Data structure: 
+## DE-genes using DESeq-2: 
 
-- Large intra-sampling variance 
-- dsa

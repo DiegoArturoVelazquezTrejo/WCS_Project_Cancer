@@ -144,6 +144,26 @@
 <h2>Androgen receptor:</h2>
 
 <img data-src="https://encyclopedia.pub/media/item_content/202212/639a757a2a326biomolecules-12-01768-g002.png" class="r-stretch"></section>
+<section id="the-question" class="slide level2">
+<h2>The question:</h2>
+<p>Does different drugs targeting the AR have different downstream effects?</p>
+</section>
+<section id="background" class="slide level2">
+<h2>Background:</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="figures_presentation/paper.png"></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li><strong>Cell Line:</strong> LNCaP (androgen-responsive prostate cancer)</li>
+<li><strong>Treatments:</strong> 3 anti-androgen drugs (Bicalutamide, Enzalutamide, Apalutamide) + Control</li>
+<li><strong>Conditions:</strong> ±DHT (dihydrotestosterone)</li>
+<li><strong>Replicates:</strong> n=2 biological replicates</li>
+<li><strong>Assay:</strong> Bulk RNA-seq</li>
+<li><strong>Analysis:</strong> Differential expression + pathway enrichment</li>
+</ul>
+</div></div>
+</section>
 <section id="the-experiment" class="slide level2">
 <h2>The experiment:</h2>
 <div class="columns">
@@ -172,20 +192,16 @@
 <li>Lack of statistical power</li>
 </ul>
 </section>
-<section id="analysisplan" class="slide level2 scrollable">
-<h2>Analysisplan:</h2>
+<section id="analysis-plan" class="slide level2 scrollable">
+<h2>Analysis plan:</h2>
 <ol type="1">
-<li>Normalization</li>
-<li>DE-genes and pathway enrichment
-<ol type="1">
-<li>Standard approach - DESeq2</li>
-<li>GSVA</li>
-</ol></li>
+<li>DE-genes and pathway enrichment</li>
 <li>The Random forrest approach</li>
 <li>Networks by proximity - LIONESS (one-sample network construction)</li>
 <li>Community analysis</li>
 <li>PPI</li>
 <li>Checking with Reactome</li>
+<li>Assessing Network effects using CoLoMoTo</li>
 </ol>
 </section>
 <section id="the-data" class="slide level2">
@@ -196,12 +212,8 @@
 <h2>PCA:</h2>
 
 <img data-src="figures/03_PCA_plot.svg" class="quarto-figure quarto-figure-center r-stretch" width="1000"></section>
-<section id="data-structure" class="slide level2">
-<h2>Data structure:</h2>
-<ul>
-<li>Large intra-sampling variance</li>
-<li>dsa</li>
-</ul>
+<section id="de-genes-using-deseq-2" class="slide level2">
+<h2>DE-genes using DESeq-2:</h2>
 
 </section>
     </div>
